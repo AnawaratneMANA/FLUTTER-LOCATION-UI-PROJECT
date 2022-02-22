@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import 'TextSection.dart';
+import 'image_banner.dart';
+import 'text_section.dart';
 
 class LocationDetails extends StatelessWidget {
   @override
@@ -17,6 +17,9 @@ class LocationDetails extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+
+          ImageBanner("assets/images/mountains.jpg"),
+
           TextSection(Colors.red),
           TextSection(Colors.green),
           TextSection(Colors.blue),
