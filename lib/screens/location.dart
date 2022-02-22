@@ -8,7 +8,28 @@ class LocationDetails extends StatelessWidget {
       appBar: AppBar(
         title: Text("Hello"),
       ),
-      body: Text(''),
+      body: Column (
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
+            child: Text("Hello World"),
+          ),
+          Container(
+              decoration: BoxDecoration(
+                color: Colors.green,
+              ),
+            child: Text("Hello World"),
+          ),
+          Container(
+              decoration: BoxDecoration(
+                color: Colors.red,
+              ),
+            child: Text("Hello World"),
+          ),
+        ],
+      )
     );
   }
 
