@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lab2/style.dart';
 
 class TextSection extends StatelessWidget {
   final String _title;
@@ -19,11 +20,11 @@ class TextSection extends StatelessWidget {
       children: [
         Container(
           padding: const EdgeInsets.fromLTRB(_hpad, 32.0, _hpad, 4.0),
-            child: Text(_title)
+            child: Text(_title, style: Styles.textSectionHeader,)
         ),
         Container(
           padding: const EdgeInsets.fromLTRB(_hpad, 10.0, _hpad, _hpad),
-            child: Text(_body),
+            child: Text(_body, style: Styles.textSectionBody),
         ),
       ],
     );

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'image_banner.dart';
 import 'text_section.dart';
+import 'package:lab2/style.dart';
 
 class LocationDetails extends StatelessWidget {
   const LocationDetails({Key? key}) : super(key: key);
@@ -10,7 +11,7 @@ class LocationDetails extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text("Hello"),
+        title: Text("Hello", style: Styles.navBarTitle,),
       ),
 
       // Created Multiple Boxes inside Column.
