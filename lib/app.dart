@@ -14,6 +14,10 @@ class App extends StatelessWidget {
         appBarTheme: AppBarTheme(
           toolbarTextStyle: TextTheme(titleMedium: AppBarTextStyle ).bodyText2,
             titleTextStyle: TextTheme(titleMedium: AppBarTextStyle ).headline6
+        ),
+        textTheme: TextTheme(
+          titleMedium: TitleTextStyle,
+          bodyText1: Body1TextStyle,
         )
       )
     );
