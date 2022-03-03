@@ -20,9 +20,9 @@ class LocationDetails extends StatelessWidget {
 
           ImageBanner("assets/images/mountains.jpg"),
 
-          TextSection(Colors.red),
-          TextSection(Colors.green),
-          TextSection(Colors.blue),
+          TextSection("summary", "something"),
+          TextSection("summary", "something"),
+          TextSection("summary", "something"),
         ],
       )
     );
