@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lab2/screens/location.dart';
+import 'package:lab2/screens/location_details.dart';
 
 void main() {
   runApp(const MyApp());
