@@ -16,13 +16,13 @@ class Locations extends StatelessWidget {
         children: locations
             .map((location) => GestureDetector(
             child: Text(location.name),
-        onTap: () => _onLocationTap(),))
+        onTap: () => _onLocationTap(context, location.id),))
             .toList(),
       ),
     );
   }
 }
 
-class _onLocationTap {
+void _onLocationTap(BuildContext context, int locationID) {
 
 }
