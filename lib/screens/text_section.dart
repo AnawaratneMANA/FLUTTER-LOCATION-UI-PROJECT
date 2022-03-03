@@ -5,6 +5,9 @@ class TextSection extends StatelessWidget {
   final String _title;
   final String _body;
 
+  // Add this to constants.
+  static const double _hpad = 16.0;
+
   // Constructor (Either optional parameters, Named parameters)
   TextSection( this._title, this._body); // Automatically assigned to the attributes.
 
@@ -14,8 +17,14 @@ class TextSection extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(_title),
-        Text(_body),
+        Container(
+          padding: const EdgeInsets.fromLTRB(_hpad, 32.0, _hpad, 4.0),
+            child: Text(_title)
+        ),
+        Container(
+          padding: const EdgeInsets.fromLTRB(_hpad, 10.0, _hpad, _hpad),
+            child: Text(_body),
+        ),
       ],
     );
   }

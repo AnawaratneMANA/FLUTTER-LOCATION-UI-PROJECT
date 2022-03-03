@@ -4,6 +4,8 @@ import 'image_banner.dart';
 import 'text_section.dart';
 
 class LocationDetails extends StatelessWidget {
+  const LocationDetails({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -20,7 +22,7 @@ class LocationDetails extends StatelessWidget {
 
           ImageBanner("assets/images/mountains.jpg"),
 
-          TextSection("summary", "something"),
+          TextSection("summary", "something.. Something.. Something"),
           TextSection("summary", "something"),
           TextSection("summary", "something"),
         ],
